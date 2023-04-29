@@ -1,0 +1,46 @@
+.footer {
+  background-color: $color-black-russian;
+
+  a {
+    color: $color-default-white;
+
+    &:hover,
+    &:focus {
+      color: $color-crimson;
+    }
+
+    &:active {
+      color: $color-persi-blue;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 0 33px;
+  }
+
+  &__logo {
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 800px;
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 11px;
+    max-width: 100px;
+  }
+}

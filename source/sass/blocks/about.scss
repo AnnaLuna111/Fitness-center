@@ -1,0 +1,109 @@
+.about {
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 660px;
+    gap: 85px;
+
+    padding: 120px 0 235px;
+
+    img {
+      min-width: 100%;
+    }
+
+    iframe {
+      border: none;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin: 37px 0 7px;
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    p {
+      font-weight: 300;
+      margin-top: 8px;
+      margin-bottom: 1px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__video {
+    position: absolute;
+    bottom: 120px;
+    left: 437px;
+
+    width: 364px;
+    height: 228px;
+    background: rgba($color-sappire, 0.5);
+
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 72px;
+    height: 72px;
+    padding: 0;
+    background: $blue-to-red;
+    border: none;
+    border-radius: 50%;
+
+    &::after {
+      position: absolute;
+      top: -13px;
+      left: -14px;
+      content: "";
+      width: 100px;
+      height: 100px;
+      background: $blue-to-red-pale;
+      border: 2px solid rgba($color-egyptian-blue, 0.2);
+      border-radius: 50%;
+
+      mask: linear-gradient($color-default-white 0 0) padding-box, linear-gradient($color-default-white 0 0);
+      /* stylelint-disable */
+      -webkit-mask-composite: xor;
+      /* stylelint-enable */
+      mask-composite: exclude;
+    }
+
+    &:hover,
+    &:focus {
+      background-image: $red-to-blue-angle;
+    }
+
+    &:active {
+      &::after,
+      svg {
+        display: none;
+      }
+    }
+  }
+}

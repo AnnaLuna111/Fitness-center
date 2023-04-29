@@ -1,0 +1,64 @@
+.form {
+  color: $color-default-white;
+  background-color: $color-sappire;
+
+  &__container {
+    padding: 55px 103px 70px;
+
+    .alumni {
+      font-size: 54px;
+      font-weight: 800;
+      line-height: 84px;
+    }
+
+    h2 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 190px 190px;
+    gap: 30px;
+
+    input {
+      min-width: 190px;
+      padding: 10px 0 4px;
+      font-size: 14px;
+      line-height: 21px;
+      color: inherit;
+      background: inherit;
+      border: none;
+      border-bottom: 1px solid $color-light-slate-grey;
+
+      &:hover,
+      &:focus {
+        background: $black-to-right;
+      }
+    }
+
+    span {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  &__button {
+    grid-column: 1/-1;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: inherit;
+
+    &:hover,
+    &:focus {
+      background: $black-to-right;
+    }
+
+    &:active {
+      background: $black-to-right;
+      border-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.header {
+  position: absolute;
+  top: 29px;
+  width: 100%;
+  z-index: 3;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: $color-default-white;
+
+      &:hover,
+      &:focus {
+        color: $color-persi-blue;
+      }
+
+      &:active {
+        color: $color-gohost-white;
+      }
+    }
+  }
+
+  &__logo {
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+  }
+
+  &__tel {
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+  }
+}

@@ -1,0 +1,33 @@
+.swiper {
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      svg {
+        color: $color-crimson;
+      }
+    }
+
+    &:active {
+      svg {
+        color: $color-egyptian-blue;
+      }
+    }
+  }
+
+  svg {
+    min-width: 16px;
+  }
+}
